@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+    <h1>JAVASCRIPT Practice</h1>
+
+    <h2 id="count">0</h2>
+
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+
+    <script>
+        let number = 0;
+
+        function increase() {
+            number++;
+            document.getElementById("count").textContent = number;
+        }
+
+        function decrease() {
+            number--;
+            document.getElementById("count").textContent = number;
+        }
+    </script>
+
+</body>
+</html>
