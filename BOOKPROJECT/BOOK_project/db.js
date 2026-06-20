@@ -1,0 +1,6 @@
+const mongoose = require('mongoose');
+mongoose.connect("mongodb://127.0.0.1:27017/libraryDB").then(() => {
+    console.log("MongoDB Connection");
+}).catch((err) => {
+    console.log("No Connection");
+});
